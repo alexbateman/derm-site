@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DERM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; background: #111; }
+    .page { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+    .bg { position: absolute; inset: 0; background-image: url('Desktop - image.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #111; }
+    .content { position: absolute; bottom: 28%; left: 27%; }
+    h1 { font-family: 'Anton', Impact, 'Arial Black', sans-serif; font-size: clamp(90px, 15.5vw, 230px); font-weight: 400; color: #ffffff; text-transform: uppercase; line-height: 0.95; letter-spacing: 0.01em; white-space: nowrap; }
+    .links { list-style: none; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 10px; margin-top: 14px; }
+    .links a { display: inline-block; font-family: 'Anton', Impact, 'Arial Black', sans-serif; font-size: clamp(13px, 1.35vw, 21px); font-weight: 400; color: #000000; background-color: #ffffff; border: 2.5px solid #000000; padding: 5px 14px 4px; text-decoration: none; text-transform: lowercase; letter-spacing: 0.03em; cursor: pointer; transition: background-color 0.12s ease, color 0.12s ease; }
+    .links a:hover, .links a:focus-visible { background-color: #000000; color: #ffffff; outline: none; }
+    @media (max-width: 768px) {
+      .bg { background-image: url('mobile - image.png'); background-position: center top; }
+      .content { bottom: 10%; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: flex-start; width: max-content; max-width: 88vw; }
+      h1 { font-size: clamp(100px, 36vw, 155px); line-height: 0.92; }
+      .links { flex-direction: column; gap: 9px; margin-top: 12px; align-self: stretch; }
+      .links a { font-size: clamp(17px, 4.5vw, 24px); padding: 9px 22px 7px; text-align: center; border-width: 2.5px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="bg" role="img" aria-label="DERM band photo"></div>
+    <main class="content">
+      <h1>DERM</h1>
+      <nav aria-label="Band links">
+        <ul class="links">
+          <li><a href="https://www.instagram.com/dermmusic/" target="_blank" rel="noopener noreferrer">instagram</a></li>
+          <li><a href="https://open.spotify.com/artist/4dPBWu76vU6ZuoDsouKlOH?si=6DMn8BfZS-ejqozSjDJ-dg" target="_blank" rel="noopener noreferrer">spotify</a></li>
+          <li><a href="https://music.apple.com/us/artist/derm/1685413672" target="_blank" rel="noopener noreferrer">apple music</a></li>
+          <li><a href="mailto:dermtheband@gmail.com">booking email</a></li>
+        </ul>
+      </nav>
+    </main>
+  </div>
+</body>
+</html>
